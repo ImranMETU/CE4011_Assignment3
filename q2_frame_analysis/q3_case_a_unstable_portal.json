@@ -1,0 +1,33 @@
+{
+  "nodes": [
+    {"id": 0, "x": 0.0, "y": 0.0, "restraints": {"uy": true}},
+    {"id": 1, "x": 0.0, "y": 1.0, "restraints": {}},
+    {"id": 2, "x": 1.0, "y": 1.0, "restraints": {}},
+    {"id": 3, "x": 1.0, "y": 0.0, "restraints": {"uy": true}}
+  ],
+  "materials": [
+    {"id": "rc", "E": 25000000000.0}
+  ],
+  "sections": [
+    {"id": "frame_section", "A": 0.09, "I": 0.000675}
+  ],
+  "elements": [
+    {"id": 1, "type": "frame", "node_i": 0, "node_j": 1, "material": "rc", "section": "frame_section", "member_loads": [{"type": "udl", "direction": "local_y", "w": -1000.0}]},
+    {
+      "id": 2,
+      "type": "frame",
+      "node_i": 1,
+      "node_j": 2,
+      "material": "rc",
+      "section": "frame_section",
+      "member_loads": [{"type": "udl", "direction": "local_y", "w": -1000.0}]
+    },
+    {"id": 3, "type": "frame", "node_i": 2, "node_j": 3, "material": "rc", "section": "frame_section", "member_loads": [{"type": "udl", "direction": "local_y", "w": -1000.0}]}
+  ],
+  "nodal_loads": [
+    {"node": 0, "fx": 0.0, "fy": -1000.0, "mz": 0.0},
+    {"node": 1, "fx": 0.0, "fy": -1000.0, "mz": 0.0},
+    {"node": 2, "fx": 0.0, "fy": -1000.0, "mz": 0.0},
+    {"node": 3, "fx": 0.0, "fy": -1000.0, "mz": 0.0}
+  ]
+}

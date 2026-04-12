@@ -1,0 +1,17 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.9, pytest-8.4.2, pluggy-1.5.0 -- c:\Users\Imran Shahriar\anaconda3\python.exe
+cachedir: .pytest_cache
+rootdir: d:\Imran\METU\Coursework\CE4011\Assignment3
+plugins: anyio-4.10.0
+collecting ... collected 8 items
+
+q2_frame_analysis/tests/test_solver_suite.py::test_unit_frame_stiffness PASSED [ 12%]
+q2_frame_analysis/tests/test_solver_suite.py::test_unit_frame_transformation PASSED [ 25%]
+q2_frame_analysis/tests/test_solver_suite.py::test_unit_frame_equiv_loads PASSED [ 37%]
+q2_frame_analysis/tests/test_solver_suite.py::test_interface_frame_assembly PASSED [ 50%]
+q2_frame_analysis/tests/test_solver_suite.py::test_interface_mixed_assembly PASSED [ 62%]
+q2_frame_analysis/tests/test_solver_suite.py::test_regression_frame PASSED [ 75%]
+q2_frame_analysis/tests/test_solver_suite.py::test_regression_truss PASSED [ 87%]
+q2_frame_analysis/tests/test_solver_suite.py::test_regression_mixed PASSED [100%]
+
+============================== 8 passed in 0.74s ==============================

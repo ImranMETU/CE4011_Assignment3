@@ -1,0 +1,99 @@
+\chapter{Testing and Verification}
+
+\section{Testing and Verification Framework}
+
+To ensure the correctness and robustness of the developed structural analysis software, a structured testing and verification strategy was adopted. The objective is to validate both the numerical implementation of the Direct Stiffness Method and the correct interaction between object-oriented components.
+
+The testing framework is divided into three categories:
+
+\begin{itemize}
+    \item \textbf{Unit Tests}: Verify the correctness of individual components, particularly element-level formulations such as stiffness matrices, transformation matrices, and equivalent nodal load vectors.
+
+    \item \textbf{Interface Tests}: Validate the interaction between components, including global stiffness matrix assembly, DOF mapping, and load vector construction.
+
+    \item \textbf{Regression Tests}: Ensure that the complete system produces accurate results for known structural problems, including frame, truss, and mixed frame-truss configurations.
+\end{itemize}
+
+All tests are automated and executed using a test suite. Numerical comparisons are performed using clearly defined tolerances to account for floating-point precision.
+
+\subsection*{Tolerance Criteria}
+
+The following tolerances are used throughout the verification process:
+
+\begin{itemize}
+    \item \textbf{Matrix comparisons}: $10^{-10}$ (exact analytical agreement expected)
+    \item \textbf{Displacement and force comparisons}: $10^{-6}$ to $10^{-3}$ (depending on problem scale)
+    \item \textbf{Equilibrium checks}: residual forces close to machine precision
+\end{itemize}
+
+\subsection*{Verification Strategy}
+
+Verification is performed by comparing computed results with:
+
+\begin{itemize}
+    \item Analytical solutions from structural mechanics (e.g., cantilever beam, two-bar truss)
+    \item Known closed-form expressions for stiffness and load vectors
+    \item Physical consistency checks such as equilibrium of forces and expected deformation patterns
+\end{itemize}
+
+This multi-level testing approach ensures that both the mathematical formulation and software implementation are reliable.
+
+\section{Unit Tests}
+
+Unit tests were developed to verify the correctness of individual frame element formulations independent of the global system. These tests focus on validating the mathematical implementation of the element-level stiffness matrices, transformation procedures, and equivalent nodal load formulations.
+
+The following unit tests were implemented:
+\begin{itemize}
+    \item \textbf{Frame Local Stiffness Matrix Test} \\
+    This test verifies that the 6$\times$6 local stiffness matrix of a 2D frame element matches the analytical formulation. The matrix symmetry and key coefficients (axial and bending terms) are checked against theoretical values.
+    \item \textbf{Frame Transformation / Global Stiffness Test} \\
+    This test validates the transformation of the local stiffness matrix into global coordinates. Both horizontal and vertical member orientations are tested to ensure that stiffness contributions are correctly mapped into the global system.
+    \item \textbf{Frame Equivalent Nodal Load Test} \\
+    This test verifies the correctness of equivalent nodal load vectors for member loads, including uniformly distributed loads (UDL) and point loads. The computed nodal forces are compared against analytical fixed-end force formulations, ensuring correct sign convention and magnitude.
+\end{itemize}
+
+All unit tests are automated and use predefined tolerances to validate numerical accuracy.
+
+\section{Interface Tests}
+
+Interface tests were implemented to verify the interaction between element-level formulations and the global structural system. These tests ensure that stiffness matrices, load vectors, and degree-of-freedom (DOF) mappings are correctly assembled.
+
+The following interface tests were conducted:
+\begin{itemize}
+    \item \textbf{Small Frame Global Assembly Test} \\
+    A simple multi-element frame structure is used to verify correct global stiffness matrix assembly. The test checks matrix dimensions, symmetry, and selected entries to confirm proper DOF mapping and element contribution.
+    \item \textbf{Mixed Frame--Truss Assembly Test} \\
+    A hybrid structure consisting of both frame and truss elements is used to validate compatibility between different element types. The test ensures that truss elements do not introduce rotational stiffness and that the global matrix remains consistent and physically meaningful.
+\end{itemize}
+
+These tests confirm that the global assembly procedure functions correctly for both homogeneous and heterogeneous structural systems.
+
+\section{Regression Tests}
+
+Regression tests were performed to validate the overall correctness of the structural analysis solver for complete systems. These tests compare computed results against known analytical or reference solutions.
+
+The following regression tests were implemented:
+\begin{itemize}
+    \item \textbf{Frame Structure Test (Fixed-Fixed Beam with Central Point Load)} \\
+    This test evaluates a fully restrained frame element subjected to a central point load. The expected reactions and member-end forces are compared with analytical solutions to verify correct load handling and force recovery.
+    \item \textbf{Truss Structure Test (Two-Bar Truss)} \\
+    A simple two-bar truss system is analyzed to verify axial force computation, displacement results, and support reactions. The absence of bending moments and shear forces in truss members is also confirmed.
+    \item \textbf{Frame--Truss Structure Test (Mixed System)} \\
+    A combined structure with both frame and truss elements is analyzed to validate full system behavior. The test verifies displacement results, reaction forces, and correct separation of axial and bending behavior between element types.
+\end{itemize}
+
+All regression tests use clearly defined tolerances and serve as benchmarks to ensure that future modifications do not introduce errors.
+
+\section{Summary of Verification Results}
+
+All implemented unit, interface, and regression tests were executed successfully using automated testing procedures. The results indicate that the structural analysis program produces accurate and consistent results within the specified numerical tolerances.
+
+The test suite confirms:
+\begin{itemize}
+    \item Correct implementation of frame element stiffness, transformation, and load formulations
+    \item Proper assembly of the global stiffness matrix for both frame and truss systems
+    \item Accurate computation of nodal displacements, support reactions, and member-end forces
+    \item Consistent behavior across frame, truss, and mixed structural configurations
+\end{itemize}
+
+These results provide strong validation of the correctness and robustness of the developed structural analysis program.

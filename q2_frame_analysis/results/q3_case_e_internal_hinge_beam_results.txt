@@ -1,0 +1,26 @@
+========================================================================
+RESULTS FOR: q3_case_e_internal_hinge_beam_results
+========================================================================
+Nodes: 4
+Elements: 3
+Active DOFs: 5
+||F|| = 2.946278e+02
+||D|| = 6.532719e-06
+
+Nodal Displacements (active equations):
+  Eq   1:  2.469135802e-06
+  Eq   2: -2.469135802e-06
+  Eq   3:  0.000000000e+00
+  Eq   4: -4.938271605e-06
+  Eq   5:  2.469135802e-06
+
+Support Reactions (all nodes, global directions):
+  Node  0: Rx= 0.000000e+00, Ry= 5.000000e+02, Mz=-7.105427e-14
+  Node  1: Rx= 0.000000e+00, Ry= 9.947598e-14, Mz=-1.563194e-13
+  Node  2: Rx= 0.000000e+00, Ry= 1.136868e-13, Mz= 0.000000e+00
+  Node  3: Rx= 0.000000e+00, Ry= 5.000000e+02, Mz= 4.263256e-14
+
+Member-End Forces (local coordinates):
+  Element  1 | i-end: Nx= 0.000000e+00, Vy=-5.000000e+02, Mz=-7.105427e-14 | j-end: Nx= 0.000000e+00, Vy=-5.000000e+02, Mz=-9.947598e-14
+  Element  2 | i-end: Nx= 0.000000e+00, Vy=-5.000000e+02, Mz=-7.105427e-14 | j-end: Nx= 0.000000e+00, Vy=-5.000000e+02, Mz= 0.000000e+00
+  Element  3 | i-end: Nx= 0.000000e+00, Vy=-5.000000e+02, Mz= 0.000000e+00 | j-end: Nx= 0.000000e+00, Vy=-5.000000e+02, Mz= 4.263256e-14

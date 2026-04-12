@@ -1,0 +1,30 @@
+========================================================================
+RESULTS FOR: q3_case_c_disconnected_substructure_results
+========================================================================
+Nodes: 5
+Elements: 3
+Active DOFs: 8
+||F|| = 1.328115e+03
+||D|| = 1.508013e-05
+
+Nodal Displacements (active equations):
+  Eq   1: -4.728034436e-06
+  Eq   2: -2.624128168e-07
+  Eq   3:  4.517797267e-06
+  Eq   4: -4.728034436e-06
+  Eq   5: -3.099847310e-06
+  Eq   6: -7.407407407e-06
+  Eq   7: -4.444444444e-07
+  Eq   8:  9.876543210e-06
+
+Support Reactions (all nodes, global directions):
+  Node  0: Rx= 1.000000e+03, Ry= 1.590429e+03, Mz=-4.095712e+02
+  Node  1: Rx=-5.074980e-10, Ry= 6.718648e-08, Mz= 2.954877e-09
+  Node  2: Rx= 6.075425e-10, Ry= 4.095712e+02, Mz= 2.883652e-09
+  Node  3: Rx= 1.000000e+03, Ry= 2.000000e+03, Mz=-5.000000e+02
+  Node  4: Rx= 8.185452e-12, Ry= 3.682203e-08, Mz= 4.277467e-12
+
+Member-End Forces (local coordinates):
+  Element  1 | i-end: Nx= 5.904288e+02, Vy=-1.000000e+03, Mz=-4.095712e+02 | j-end: Nx=-5.904288e+02, Vy=-1.004992e-10, Mz=-9.042884e+01
+  Element  2 | i-end: Nx=-6.075425e-10, Vy=-4.095712e+02, Mz= 9.042884e+01 | j-end: Nx= 6.075425e-10, Vy=-5.904288e+02, Mz= 2.883652e-09
+  Element  3 | i-end: Nx= 1.000000e+03, Vy=-1.000000e+03, Mz=-5.000000e+02 | j-end: Nx=-1.000000e+03, Vy=-8.185452e-12, Mz= 4.277467e-12

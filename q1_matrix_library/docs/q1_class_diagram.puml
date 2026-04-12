@@ -1,0 +1,132 @@
+@startuml q1_matrix_library_uml
+
+!define ABSTRACT_COLOR #FFFFCC
+!define CONCRETE_COLOR #CCFFCC
+!define METHOD_COLOR #E6F2FF
+
+skinparam classBackgroundColor<<abstract>> ABSTRACT_COLOR
+skinparam classBackgroundColor<<concrete>> CONCRETE_COLOR
+skinparam backgroundColor #F9F9F9
+skinparam classArrowColor #333333
+skinparam classBorderColor #666666
+skinparam classHeaderBackgroundColor #E0E0E0
+
+title Q1 Matrix Library - Class Architecture
+
+package "q1_matrix_library" {
+    
+    ' ============================================================
+    ' VECTOR CLASS
+    ' ============================================================
+    class Vector <<concrete>> {
+        {field} -size: int
+        {field} -values: list[float]
+        __
+        {method} +Vector(size: int)
+        {method} +get(i: int): float
+        {method} +set(i: int, value: float): None
+        {method} +add(i: int, value: float): None
+        {method} +dot(other: Vector): float
+        {method} +norm(): float
+        {method} +copy(): Vector
+        {method} +__repr__(): str
+        --
+        Note: Dense storage [0.0] * size
+        Used by solvers as input/output
+        Validates bounds on all operations
+    }
+    
+    ' ============================================================
+    ' MATRIX HIERARCHY
+    ' ============================================================
+    abstract class Matrix <<abstract>> {
+        {field} #size: int
+        __
+        {method} +Matrix(size: int)
+        {method} +{abstract} get(i: int, j: int): float
+        {method} +{abstract} set(i: int, j: int, value: float): None
+        {method} +{abstract} add(i: int, j: int, value: float): None
+        {method} +{abstract} matvec(x: Vector): Vector
+        --
+        Note: Abstract interface for matrix storage
+        Assumes square matrices (size x size)
+        Validates dimension on initialization
+    }
+    
+    class SymmetricSparseMatrix <<concrete>> {
+        {field} -data: dict
+        __
+        {method} +SymmetricSparseMatrix(size: int)
+        {method} +add(i: int, j: int, value: float): None
+        {method} +set(i: int, j: int, value: float): None
+        {method} +get(i: int, j: int): float
+        {method} +matvec(x: Vector): Vector
+        {method} -_normalize(i: int, j: int): tuple
+        {method} -_validate_indices(i: int, j: int): None
+        {method} +__repr__(): str
+        --
+        Storage: {(i,j): value} where i <= j
+        Exploits symmetry: A[i,j] = A[j,i]
+        Complexity: O(nnz) for matvec
+        Ideal for FEM stiffness matrices
+    }
+    
+    ' ============================================================
+    ' LINEAR SOLVER HIERARCHY
+    ' ============================================================
+    abstract class LinearSolver <<abstract>> {
+        __
+        {method} +{abstract} solve(A: Matrix, b: Vector): Vector
+        --
+        Note: Abstract interface for linear system solvers
+        Solves: A @ x = b for given A and b
+    }
+    
+    class ConjugateGradientSolver <<concrete>> {
+        {field} -tol: float
+        {field} -max_iter: int
+        __
+        {method} +ConjugateGradientSolver(tol: float, max_iter: int)
+        {method} +solve(A: Matrix, b: Vector): Vector
+        --
+        Algorithm: Conjugate Gradient method
+        Requirements: A must be SPD
+        Convergence: Relative residual ||r|| / ||r0|| < tol
+        Iteration limit: max_iter
+        Suitable for large sparse systems
+    }
+    
+    ' ============================================================
+    ' RELATIONSHIPS
+    ' ============================================================
+    Matrix <|-- SymmetricSparseMatrix : implements
+    LinearSolver <|-- ConjugateGradientSolver : implements
+    
+    SymmetricSparseMatrix --> Vector : input/output
+    ConjugateGradientSolver --> Matrix : solves
+    ConjugateGradientSolver --> Vector : computes product
+    
+    ' ============================================================
+    ' USAGE WORKFLOW
+    ' ============================================================
+    note right of ConjugateGradientSolver
+        Typical Workflow:
+        1. Create matrix A: SymmetricSparseMatrix(size)
+        2. Assemble entries: A.add(i, j, value)
+        3. Create RHS vector: b = Vector(size); b.set(i, val)
+        4. Create solver: solver = ConjugateGradientSolver()
+        5. Solve: x = solver.solve(A, b)
+        6. Verify: residual = b - A @ x
+    end note
+    
+    note right of SymmetricSparseMatrix
+        Symmetry Storage:
+        • Only stores upper triangle (i <= j)
+        • Access (i, j) and (j, i) returns same value
+        • Memory efficient for tall sparse systems
+        • Example: FEM assembly stores k_ij once
+    end note
+    
+}
+
+@enduml

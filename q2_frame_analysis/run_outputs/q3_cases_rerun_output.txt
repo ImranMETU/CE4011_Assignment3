@@ -1,0 +1,20 @@
+FILE: q3_case_a_unstable_portal.json
+success: False
+error: Global stiffness matrix is singular or nearly singular. The structure may be unstable due to insufficient lateral restraint or a rigid-body sway mechanism.
+
+FILE: q3_case_b_disconnected_member.json
+success: False
+error: Structure contains disconnected components. At least one part is not connected to the main structural system.
+
+FILE: q3_case_c_disconnected_substructure.json
+success: False
+error: Structure contains disconnected components. At least one part is not connected to the main structural system.
+
+FILE: q3_case_d_unstable_truss.json
+success: False
+error: Active DOF 1 has zero stiffness contribution. This suggests an unconnected node, released rotational DOF without supporting stiffness, or a mechanism.
+
+FILE: q3_case_e_internal_hinge_beam.json
+success: True
+active_dofs: 5
+reactions: {0: {'rx': 0.0, 'ry': 4999.999999999996, 'mz': -4.547473508864641e-13}, 1: {'rx': 0.0, 'ry': -12499.999999999996, 'mz': -3.637978807091713e-12}, 2: {'rx': 0.0, 'ry': 5.4569682106375694e-12, 'mz': 0.0}, 3: {'rx': 0.0, 'ry': -2500.0000000000036, 'mz': 3.637978807091713e-12}}
