@@ -1,34 +1,63 @@
-# CE4011 Assignment 3 — Structural Analysis Software
+# CE4011 Assignment 3
 
-## Overview
-This project implements an object-oriented 2D structural analysis solver using the Direct Stiffness Method (DSM). The program supports both frame and truss elements, including moment releases, point loads, and uniformly distributed loads.
+2D structural analysis solver report and codebase for CE4011, based on the Direct Stiffness Method with object-oriented design.
 
-The solver computes:
-- Nodal displacements
-- Support reactions
-- Member-end forces
+## What is included
 
----
+- Report source (LaTeX): Chapters 1-5 and main.tex
+- Structural solver: frame/truss analysis under static loading
+- Verification assets: benchmark cases, FTool comparisons, diagnostics
 
-## Repository Structure
+## Project layout
 
-- `model/`  
-  Core OOP implementation: Structure, Node, Element, FrameElement, TrussElement. Handles assembly, solving, and post-processing.
+- Chapter1_Object_Oriented_Structural_Analysis_Program.tex
+- Chapter2_Testing_and_Verification.tex
+- Chapter3_Warning_and_Error_Handling.tex
+- Chapter4_Conclusion.tex
+- Chapter5_References.tex
+- main.tex
+- q1_matrix_library/
+- q2_frame_analysis/
 
-- `matrixlib/`  
-  Custom numerical library (Assignment 2): symmetric sparse matrix and vector operations.
+## Quick start
 
-- `fem/`  
-  Finite element utilities: transformations, element formulations, load handling.
+### 1) Build the report
 
-- `tests/`  
-  Unit, interface, and regression tests.
+From the repository root:
 
----
+```powershell
+python compile_report.py
+```
 
-## How to Run
+or:
 
-Run the built-in example:
+```powershell
+pdflatex -interaction=nonstopmode main.tex
+```
 
-```bash
-python main.py
+### 2) Run the structural solver
+
+From q2_frame_analysis:
+
+```powershell
+python main.py <input_case.json>
+```
+
+Example:
+
+```powershell
+python main.py q2_frame_regression_test.json
+```
+
+### 3) Run tests
+
+From q2_frame_analysis:
+
+```powershell
+pytest
+```
+
+## Notes
+
+- Python environment used during development: conda environment ce4011
+- Generated build/cache files (aux, log, toc, pdf, pytest cache) are not part of core source
