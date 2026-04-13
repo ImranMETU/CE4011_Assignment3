@@ -1,0 +1,17 @@
+\chapter{Conclusion}
+
+This assignment presented the design, implementation, testing, and robustness evaluation of a 2D structural analysis software framework developed using object-oriented principles and the Direct Stiffness Method. The report demonstrated that the software architecture supports modular extensibility for frame and truss elements, transparent data flow from input to output, and reliable numerical behavior under valid structural configurations.
+
+The verification results showed consistency with expected analytical behavior at unit, interface, and system levels. In addition, the warning and error handling study confirmed that the solver can distinguish between stable, unstable, and disconnected structural models, and provide meaningful diagnostics before producing potentially misleading results.
+
+Overall, the developed program satisfies the core technical objectives of CE4011 Assignment 3 by combining:
+\begin{itemize}
+    \item mathematically correct stiffness-based analysis,
+    \item a maintainable object-oriented code structure,
+    \item systematic testing and verification, and
+    \item practical robustness checks for real-world modeling errors.
+\end{itemize}
+
+The main challenges were handling mixed element systems, diagnosing instability cases cleanly, and keeping the implementation consistent across assembly, loading, and recovery stages. The current solver is still limited to 2D linear elastic analysis, so it cannot yet capture nonlinear material behavior, large-displacement effects, or full 3D structural action. It also depends on well-formed input data and does not yet provide advanced optimization, automated model repair, or design checks. Future work should focus on extending the solver to richer element types, improving error recovery and diagnostics, and adding nonlinear and 3D analysis capabilities.
+
+As part of the report-writing and development support workflow, AI assistants were consulted for drafting support, language refinement, and coding assistance, including ChatGPT Plus (GPT-5.4), Claude Sonnet (4.6), and GitHub Copilot (Anthropic, 2026; GitHub, 2026; OpenAI, 2026).

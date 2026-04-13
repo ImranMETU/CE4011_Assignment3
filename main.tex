@@ -7,11 +7,31 @@
 \usepackage{amsmath,amssymb}
 \usepackage{graphicx}
 \usepackage{etoolbox}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{placeins}
 \usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
 
-\preto\section{\clearpage}
+\titlespacing*{\chapter}{0pt}{-30pt}{20pt}
+\titleformat{\chapter}[block]{\normalfont\huge\bfseries}{\thechapter.}{1em}{}
 
 \geometry{margin=1in}
+\setlength{\headheight}{15pt}
+
+\fancyhf{}
+\fancyhead[L]{CE4011 Assignment 3}
+\fancyhead[R]{Imran Shahriar - 2735835}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyfoot[C]{\thepage}
+\fancypagestyle{plain}{%
+\fancyhf{}
+\fancyhead[L]{CE4011 Assignment 3}
+\fancyhead[R]{Imran Shahriar - 2735835}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyfoot[C]{\thepage}}
+\pagestyle{fancy}
 
 \title{CE4011 Assignment 3 Report}
 \author{Imran Shahriar}
@@ -19,12 +39,53 @@
 
 \begin{document}
 
-\maketitle
+\begin{titlepage}
+\thispagestyle{fancy}
+\begin{flushright}
+{\large April 13, 2026\par}
+\end{flushright}
+
+\vspace*{0.5cm}
+
+\begin{center}
+\includegraphics[width=0.42\textwidth]{metu_logo.jpg}\par
+\vspace{0.7cm}
+{\LARGE CE4011 Assignment 3 Report\par}
+\vspace{0.45cm}
+{\large Special Topics in Civil Engineering:\par}
+{\large Structural Analysis Software Development\par}
+\vspace{0.6cm}
+{\normalsize GitHub: \url{https://github.com/ImranMETU/CE4011_Assignment3}\par}
+\end{center}
+
+\vspace{0.9cm}
+
+\noindent
+\begin{minipage}[t]{0.58\textwidth}
+\textbf{Submitted By}\\[0.35cm]
+Imran Shahriar\\[0.2cm]
+2735835\\[0.2cm]
+MSc. in Structural Engineering\\[0.2cm]
+2nd Semester
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.38\textwidth}
+\raggedleft
+\textbf{Submitted To}\\[0.35cm]
+Prof Dr Ozgur Kurc
+\end{minipage}
+\end{titlepage}
+\clearpage
 \tableofcontents
+\clearpage
+\listoffigures
+\clearpage
+\listoftables
 \clearpage
 
 \input{Chapter1_Object_Oriented_Structural_Analysis_Program}
 \input{Chapter2_Testing_and_Verification}
 \input{Chapter3_Warning_and_Error_Handling}
-
+\input{Chapter4_Conclusion}
+\input{Chapter5_References}
 \end{document}

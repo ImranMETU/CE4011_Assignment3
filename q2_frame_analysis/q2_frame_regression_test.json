@@ -1,0 +1,14 @@
+{
+  "nodes": [
+    {"id": 0, "x": 0.0, "y": 0.0, "restraints": {"ux": true, "uy": true, "rz": true}},
+    {"id": 1, "x": 0.0, "y": 2.0},
+    {"id": 2, "x": 2.0, "y": 2.0}
+  ],
+  "materials": [{"id": "m1", "E": 25000000000.0}],
+  "sections": [{"id": "s1", "A": 0.09, "I": 0.000675}],
+  "elements": [
+    {"id": 1, "type": "frame", "node_i": 0, "node_j": 1, "material": "m1", "section": "s1"},
+    {"id": 2, "type": "frame", "node_i": 1, "node_j": 2, "material": "m1", "section": "s1"}
+  ],
+  "nodal_loads": [{"node": 2, "fx": 0.0, "fy": -5.0, "mz": 0.0}]
+}

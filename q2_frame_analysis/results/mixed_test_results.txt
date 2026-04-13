@@ -1,0 +1,22 @@
+========================================================================
+RESULTS FOR: mixed_test_results
+========================================================================
+Nodes: 3
+Elements: 2
+Active DOFs: 3
+||F|| = 5.000000e+00
+||D|| = 2.438281e-08
+
+Nodal Displacements (active equations):
+  Eq   1: -8.847505294e-24
+  Eq   2: -1.950624810e-08
+  Eq   3: -1.462968607e-08
+
+Support Reactions (all nodes, global directions):
+  Node  0: Rx= 9.953443e-15, Ry= 1.234380e-01, Mz= 2.468760e-01
+  Node  1: Rx=-9.654840e-15, Ry= 8.881784e-16, Mz= 0.000000e+00
+  Node  2: Rx=-2.986033e-16, Ry= 4.876562e+00, Mz= 0.000000e+00
+
+Member-End Forces (local coordinates):
+  Element  1 | i-end: Nx= 9.953443e-15, Vy= 1.234380e-01, Mz= 2.468760e-01 | j-end: Nx=-9.953443e-15, Vy=-1.234380e-01, Mz= 0.000000e+00
+  Element  2 | i-end: Nx= 4.876562e+00, Vy= 0.000000e+00, Mz= 0.000000e+00 | j-end: Nx=-4.876562e+00, Vy= 0.000000e+00, Mz= 0.000000e+00

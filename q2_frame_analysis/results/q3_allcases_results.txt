@@ -1,0 +1,112 @@
+########################################################################
+Running: q3_case_a_unstable_portal.json
+########################################################################
+
+========================================================================
+ANALYSIS RESULTS FOR: q3_case_a_unstable_portal.json
+========================================================================
+ERROR: Global stiffness matrix is singular or nearly singular. The structure may be unstable due to insufficient lateral restraint or a rigid-body sway mechanism.
+
+########################################################################
+Running: q3_case_b_disconnected_member.json
+########################################################################
+
+========================================================================
+ANALYSIS RESULTS FOR: q3_case_b_disconnected_member.json
+========================================================================
+ERROR: Global stiffness matrix is singular or nearly singular. The structure may be unstable due to insufficient lateral restraint or a rigid-body sway mechanism.
+
+########################################################################
+Running: q3_case_c_disconnected_substructure.json
+########################################################################
+
+========================================================================
+ANALYSIS RESULTS FOR: q3_case_c_disconnected_substructure.json
+========================================================================
+Nodes: 5
+Elements: 3
+Active DOFs: 8
+K nnz (upper triangle): 21
+||F|| = 1.328115e+03
+||D|| = 1.508013e-05
+
+Nodal Displacements (active equations):
+  Eq   1: -4.728034436e-06
+  Eq   2: -2.624128168e-07
+  Eq   3:  4.517797267e-06
+  Eq   4: -4.728034436e-06
+  Eq   5: -3.099847310e-06
+  Eq   6: -7.407407407e-06
+  Eq   7: -4.444444444e-07
+  Eq   8:  9.876543210e-06
+
+Support Reactions (all nodes, global directions):
+  Node  0: Rx= 1.000000e+03, Ry= 1.590429e+03, Mz=-4.095712e+02
+  Node  1: Rx=-1.946319e-10, Ry= 6.358164e-08, Mz= 2.802111e-09
+  Node  2: Rx= 3.037712e-10, Ry= 4.095712e+02, Mz= 2.728839e-09
+  Node  3: Rx= 1.000000e+03, Ry= 2.000000e+03, Mz=-5.000000e+02
+  Node  4: Rx= 1.193712e-11, Ry= 4.455808e-08, Mz= 6.210144e-12
+
+Member-End Forces (local coordinates):
+  Element  1 | i-end: Nx= 5.904288e+02, Vy=-1.000000e+03, Mz=-4.095712e+02 | j-end: Nx=-5.904288e+02, Vy=-1.066951e-10, Mz=-9.042884e+01
+  Element  2 | i-end: Nx=-3.037712e-10, Vy=-4.095712e+02, Mz= 9.042884e+01 | j-end: Nx= 3.037712e-10, Vy=-5.904288e+02, Mz= 2.728839e-09
+  Element  3 | i-end: Nx= 1.000000e+03, Vy=-1.000000e+03, Mz=-5.000000e+02 | j-end: Nx=-1.000000e+03, Vy=-1.193712e-11, Mz= 6.210144e-12
+
+########################################################################
+Running: q3_case_d_unstable_truss.json
+########################################################################
+
+========================================================================
+ANALYSIS RESULTS FOR: q3_case_d_unstable_truss.json
+========================================================================
+Nodes: 3
+Elements: 2
+Active DOFs: 2
+K nnz (upper triangle): 3
+||F|| = 1.500000e+03
+||D|| = 4.192627e-06
+
+Nodal Displacements (active equations):
+  Eq   1:  0.000000000e+00
+  Eq   2: -4.192627458e-06
+
+Support Reactions (all nodes, global directions):
+  Node  0: Rx= 3.750000e+02, Ry= 1.750000e+03, Mz= 0.000000e+00
+  Node  1: Rx= 0.000000e+00, Ry=-5.000000e+02, Mz= 0.000000e+00
+  Node  2: Rx=-3.750000e+02, Ry= 1.750000e+03, Mz= 0.000000e+00
+
+Member-End Forces (local coordinates):
+  Element  1 | i-end: Nx= 8.385255e+02, Vy= 0.000000e+00, Mz= 0.000000e+00 | j-end: Nx=-8.385255e+02, Vy= 0.000000e+00, Mz= 0.000000e+00
+  Element  2 | i-end: Nx= 8.385255e+02, Vy= 0.000000e+00, Mz= 0.000000e+00 | j-end: Nx=-8.385255e+02, Vy= 0.000000e+00, Mz= 0.000000e+00
+
+########################################################################
+Running: q3_case_e_internal_hinge_beam.json
+########################################################################
+
+========================================================================
+ANALYSIS RESULTS FOR: q3_case_e_internal_hinge_beam.json
+========================================================================
+Nodes: 4
+Elements: 3
+Active DOFs: 5
+K nnz (upper triangle): 11
+||F|| = 2.946278e+02
+||D|| = 6.532719e-06
+
+Nodal Displacements (active equations):
+  Eq   1:  2.469135802e-06
+  Eq   2: -2.469135802e-06
+  Eq   3:  0.000000000e+00
+  Eq   4: -4.938271605e-06
+  Eq   5:  2.469135802e-06
+
+Support Reactions (all nodes, global directions):
+  Node  0: Rx= 0.000000e+00, Ry= 5.000000e+02, Mz=-5.684342e-14
+  Node  1: Rx= 0.000000e+00, Ry= 1.421085e-13, Mz=-1.563194e-13
+  Node  2: Rx= 0.000000e+00, Ry= 8.526513e-14, Mz= 0.000000e+00
+  Node  3: Rx= 0.000000e+00, Ry= 5.000000e+02, Mz= 2.842171e-14
+
+Member-End Forces (local coordinates):
+  Element  1 | i-end: Nx= 0.000000e+00, Vy=-5.000000e+02, Mz=-5.684342e-14 | j-end: Nx= 0.000000e+00, Vy=-5.000000e+02, Mz=-1.136868e-13
+  Element  2 | i-end: Nx= 0.000000e+00, Vy=-5.000000e+02, Mz=-2.842171e-14 | j-end: Nx= 0.000000e+00, Vy=-5.000000e+02, Mz= 0.000000e+00
+  Element  3 | i-end: Nx= 0.000000e+00, Vy=-5.000000e+02, Mz= 0.000000e+00 | j-end: Nx= 0.000000e+00, Vy=-5.000000e+02, Mz= 2.842171e-14

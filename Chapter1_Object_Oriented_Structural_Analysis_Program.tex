@@ -5,6 +5,16 @@ This project develops a 2D structural analysis program using the Direct Stiffnes
 
 The main objective is to provide a reusable and extensible solver architecture for CE4011 assignments, while preserving numerical efficiency by reusing the matrix library from Q1.
 
+\subsection*{File Architecture}
+To keep the GitHub repository focused and easy to navigate, the project is organized around a small set of source, analysis, and report files:
+\begin{itemize}
+  \item \textbf{Report root}: \texttt{main.tex} assembles the full report, while \texttt{Chapter1\_...tex} through \texttt{Chapter5\_...tex} contain the chapter content.
+  \item \textbf{Structural solver}: \texttt{q2\_frame\_analysis/} contains the solver implementation, models, tests, regression cases, and generated results.
+  \item \textbf{Shared numerics}: \texttt{q1\_matrix\_library/} stores the reusable sparse matrix and solver utilities imported from the earlier assignment.
+  \item \textbf{Assets and outputs}: figures, screenshots, and exported logs are kept in dedicated folders such as \texttt{images/}, \texttt{ftool/}, and \texttt{results/} so the codebase stays compact.
+\end{itemize}
+This layout reduces clutter, keeps the solver code separated from report assets, and makes the GitHub repository easier to review and maintain.
+
 \section{Analysis and Design Decisions}
 \subsection*{Why Object-Oriented Programming (OOP)}
 OOP was selected to separate responsibilities and improve maintainability:
@@ -23,7 +33,7 @@ DSM is the standard finite-element formulation for linear structural analysis:
 \end{itemize}
 
 \subsection*{Why Reuse the Q1 Matrix Library}
-The Q1 implementation (symmetric sparse matrix, vector, and conjugate gradient solver) was reused because:
+The Q1 implementation (symmetric sparse matrix, vector, and conjugate gradient solver) from Assignment 2 was reused because:
 \begin{itemize}
     \item stiffness matrices are symmetric by formulation,
     \item sparse storage reduces memory usage,
@@ -311,36 +321,6 @@ to avoid the fragile-base-class problems that arise from deep inheritance
 chains.
 
 % ------------------------------------------------------------------
-\subsection*{Semantic Discrepancy Notes}
-% ------------------------------------------------------------------
-
-Two naming inconsistencies exist between the module-level legacy functions
-in \texttt{frame\_element.py} and the object-oriented interface:
-
-\begin{itemize}
-  \item \texttt{compute\_rotation\_matrix()},
-  \texttt{compute\_global\_stiffness()}, \texttt{matrix\_multiply()},
-  \texttt{matrix\_transpose()}, and \texttt{print\_matrix()} are defined
-  at module level but are never called by \texttt{FrameElement} or
-  \texttt{Element}.
-  The active implementation resides in
-  \texttt{Element.transformation\_matrix()} and
-  \texttt{Element.global\_stiffness()}.
-  These legacy functions are dead code and represent a semantic
-  discrepancy between what the module exposes and what the class
-  hierarchy actually uses.
-  They should be removed before final submission to prevent confusion.
-
-  \item The parameter named \texttt{R} in the legacy
-  \texttt{compute\_rotation\_matrix()} function is mathematically the
-  transformation matrix \texttt{T} (global-to-local), not a rotation
-  matrix in the conventional sense.
-  The object-oriented code avoids this ambiguity by naming the method
-  \texttt{transformation\_matrix()} and documenting its direction
-  explicitly.
-\end{itemize}
-
-% ------------------------------------------------------------------
 \subsection*{Multiplicity Summary Table}
 % ------------------------------------------------------------------
 
@@ -407,16 +387,13 @@ The required fields are summarized below:
     {"id": 1, "x": 0.0, "y": 1.0},
     {"id": 2, "x": 1.0, "y": 1.0}
   ],
-
   "materials": [
     {"id": "steel", "E": 2.1e11}
   ],
-
   "sections": [
     {"id": "frame_sec", "A": 0.01, "I": 1.0e-5},
     {"id": "truss_sec", "A": 0.01, "I": 0.0}
   ],
-
   "elements": [
     {
       "id": 1,
@@ -438,7 +415,6 @@ The required fields are summarized below:
       "section": "truss_sec"
     }
   ],
-
   "nodal_loads": [
     {"node": 2, "fx": 0.0, "fy": -1000.0, "mz": 0.0}
   ]
@@ -448,7 +424,7 @@ The required fields are summarized below:
 \subsubsection*{Notes}
 
 \begin{itemize}
-    \item Frame elements include axial, shear, and bending behavior.
+    \item Frame elements include axial and bending stiffness, with shear force recovered in the element end-force results.
     \item Truss elements carry axial forces only.
     \item Boundary conditions are defined using boolean flags for each DOF.
     \item Member loads include uniformly distributed loads and point loads.

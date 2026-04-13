@@ -1,0 +1,21 @@
+========================================================================
+RESULTS FOR: q2_truss_regression_test_results
+========================================================================
+Nodes: 3
+Elements: 2
+Active DOFs: 2
+||F|| = 1.000000e+01
+||D|| = 5.656854e-08
+
+Nodal Displacements (active equations):
+  Eq   1:  0.000000000e+00
+  Eq   2: -5.656854249e-08
+
+Support Reactions (all nodes, global directions):
+  Node  0: Rx= 5.000000e+00, Ry= 5.000000e+00, Mz= 0.000000e+00
+  Node  1: Rx=-5.000000e+00, Ry= 5.000000e+00, Mz= 0.000000e+00
+  Node  2: Rx= 0.000000e+00, Ry= 0.000000e+00, Mz= 0.000000e+00
+
+Member-End Forces (local coordinates):
+  Element  1 | i-end: Nx= 7.071068e+00, Vy= 0.000000e+00, Mz= 0.000000e+00 | j-end: Nx=-7.071068e+00, Vy= 0.000000e+00, Mz= 0.000000e+00
+  Element  2 | i-end: Nx= 7.071068e+00, Vy= 0.000000e+00, Mz= 0.000000e+00 | j-end: Nx=-7.071068e+00, Vy= 0.000000e+00, Mz= 0.000000e+00

@@ -17,10 +17,20 @@ def as_dense_matrix(matrix):
     return [[matrix.get(i, j) for j in range(matrix.size)] for i in range(matrix.size)]
 
 
-def assert_close(actual, expected, message):
-    assert isclose(actual, expected, rel_tol=REL_TOL, abs_tol=ABS_TOL), (
+def assert_close(actual, expected, message, abs_tol=ABS_TOL, rel_tol=REL_TOL):
+    """
+    Assert that actual and expected values are close within tolerance.
+    
+    Args:
+        actual: Computed value
+        expected: Expected value
+        message: Description of what is being tested
+        abs_tol: Absolute tolerance (default ABS_TOL=1e-8)
+        rel_tol: Relative tolerance (default REL_TOL=1e-6)
+    """
+    assert isclose(actual, expected, rel_tol=rel_tol, abs_tol=abs_tol), (
         f"{message}: expected {expected!r}, got {actual!r} "
-        f"(rel_tol={REL_TOL}, abs_tol={ABS_TOL})"
+        f"(rel_tol={rel_tol}, abs_tol={abs_tol})"
     )
 
 

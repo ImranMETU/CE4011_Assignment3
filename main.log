@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.10)  12 APR 2026 21:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.10)  13 APR 2026 04:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -177,6 +177,26 @@ File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ) (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count299
+) (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen168
+\ar@mcellbox=\box55
+\extrarowheight=\dimen169
+\NC@list=\toks26
+\extratabsurround=\skip54
+\backup@length=\skip55
+\ar@cellbox=\box56
+) (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+\TX@col@width=\dimen170
+\TX@old@table=\dimen171
+\TX@old@col=\dimen172
+\TX@target=\dimen173
+\TX@delta=\dimen174
+\TX@cols=\count300
+\TX@ftn=\toks27
+) (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/latex/placeins\placeins.sty
+Package: placeins 2005/04/18  v 2.2
 ) (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
  (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
@@ -206,13 +226,13 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
  (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count300
+\c@section@level=\count301
 ) (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\@linkdim=\dimen168
-\Hy@linkcounter=\count301
-\Hy@pagecounter=\count302
+\@linkdim=\dimen175
+\Hy@linkcounter=\count302
+\Hy@pagecounter=\count303
  (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -220,7 +240,7 @@ Now handling font encoding PD1 ...
 ) (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count303
+\Hy@SavedSpaceFactor=\count304
  (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -233,21 +253,21 @@ Package hyperref Info: Plain pages OFF on input line 4216.
 Package hyperref Info: Backreferencing OFF on input line 4221.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4468.
-\c@Hy@tempcnt=\count304
+\c@Hy@tempcnt=\count305
  (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4807.
-\XeTeXLinkMargin=\dimen169
+\XeTeXLinkMargin=\dimen176
  (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count305
-\Field@Width=\dimen170
-\Fld@charsize=\dimen171
+\Fld@menulength=\count306
+\Field@Width=\dimen177
+\Fld@charsize=\dimen178
 Package hyperref Info: Hyper figures OFF on input line 6084.
 Package hyperref Info: Link nesting OFF on input line 6089.
 Package hyperref Info: Hyper index ON on input line 6092.
@@ -255,15 +275,15 @@ Package hyperref Info: backreferencing OFF on input line 6099.
 Package hyperref Info: Link coloring OFF on input line 6104.
 Package hyperref Info: Link coloring with OCG OFF on input line 6109.
 Package hyperref Info: PDF/A mode OFF on input line 6114.
-\Hy@abspage=\count306
-\c@Item=\count307
-\c@Hfootnote=\count308
+\Hy@abspage=\count307
+\c@Item=\count308
+\c@Hfootnote=\count309
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2026-01-29 v7.01p Hyperref driver for pdfTeX
-\Fld@listcount=\count309
-\c@bookmark@seq@number=\count310
+\Fld@listcount=\count310
+\c@bookmark@seq@number=\count311
  (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
  (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
@@ -271,35 +291,63 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
 )
-\Hy@SectionHShift=\skip54
+\Hy@SectionHShift=\skip56
+) (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+\f@nch@headwidth=\skip57
+\f@nch@offset@elh=\skip58
+\f@nch@offset@erh=\skip59
+\f@nch@offset@olh=\skip60
+\f@nch@offset@orh=\skip61
+\f@nch@offset@elf=\skip62
+\f@nch@offset@erf=\skip63
+\f@nch@offset@olf=\skip64
+\f@nch@offset@orf=\skip65
+\f@nch@height=\skip66
+\f@nch@footalignment=\skip67
+\f@nch@widthL=\skip68
+\f@nch@widthC=\skip69
+\f@nch@widthR=\skip70
+\@temptokenb=\toks28
+) (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box57
+\beforetitleunit=\skip71
+\aftertitleunit=\skip72
+\ttl@plus=\dimen179
+\ttl@minus=\dimen180
+\ttl@toksa=\toks29
+\titlewidth=\dimen181
+\titlewidthlast=\dimen182
+\titlewidthfirst=\dimen183
 )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 20.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 40.
  (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count311
+\l__color_backend_stack_int=\count312
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -318,7 +366,7 @@ LaTeX Font Info:    ... okay on input line 20.
 * \oddsidemargin=0.0pt
 * \evensidemargin=0.0pt
 * \topmargin=-37.0pt
-* \headheight=12.0pt
+* \headheight=15.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
 * \footskip=30.0pt
@@ -337,67 +385,69 @@ LaTeX Font Info:    ... okay on input line 20.
 
 (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count312
-\scratchdimen=\dimen172
-\scratchbox=\box55
-\nofMPsegments=\count313
-\nofMParguments=\count314
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count315
-\MPscratchDim=\dimen173
-\MPnumerator=\count316
-\makeMPintoPDFobject=\count317
-\everyMPtoPDFconversion=\toks27
+\scratchcounter=\count313
+\scratchdimen=\dimen184
+\scratchbox=\box58
+\nofMPsegments=\count314
+\nofMParguments=\count315
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count316
+\MPscratchDim=\dimen185
+\MPnumerator=\count317
+\makeMPintoPDFobject=\count318
+\everyMPtoPDFconversion=\toks31
 ) (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 20.
+Package hyperref Info: Link coloring OFF on input line 40.
  (main.out) (main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 23.
+<metu_logo.jpg, id=111, 475.7775pt x 475.7775pt>
+File: metu_logo.jpg Graphic file (type jpg)
+<use metu_logo.jpg>
+Package pdftex.def Info: metu_logo.jpg  used on input line 51.
+(pdftex.def)             Requested size: 190.24568pt x 190.24954pt.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 58.
+ (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 58.
  (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 23.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 58.
  (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 23.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 58.
  (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 23.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 58.
  (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 23.
+(Font)              <12> on input line 58.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 23.
+(Font)              <8> on input line 58.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 23.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
+(Font)              <6> on input line 58.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 58.
  (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 58.
  (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+) [1{C:/Users/Imran Shahriar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}
 
-{C:/Users/Imran Shahriar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}] (main.toc
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 2.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 2.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 2.
-)
+ <./metu_logo.jpg>] (main.toc)
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
@@ -405,185 +455,375 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.24 \clearpage
+l.80 \clearpage
                 [1
+
+
+] (main.lof)
+\tf@lof=\write5
+\openout5 = `main.lof'.
+
+ [2
+
+
+] (main.lot)
+\tf@lot=\write6
+\openout6 = `main.lot'.
+
+ [3
+
 
 ] (Chapter1_Object_Oriented_Structural_Analysis_Program.tex
 Chapter 1.
-[2
-
-
-] [3
-
-{C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 12.
- (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 11.
+(C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 12.
- (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [4
+Overfull \hbox (3.89322pt too wide) in paragraph at lines 12--13
+[]\T1/lmr/bx/n/12 Structural solver\T1/lmr/m/n/12 : \T1/lmtt/m/n/12 q2_frame_analysis/ \T1/lmr/m/n/12 con-tains the solver im-ple-men-ta-tion, mod-
+ []
 
-{C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}]
-Overfull \hbox (14.75677pt too wide) in paragraph at lines 43--51
+[4
+
+
+{C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
+Overfull \hbox (14.75677pt too wide) in paragraph at lines 53--61
 \T1/lmr/bx/n/12 nu-mer-i-cal li-brary layer \T1/lmr/m/n/12 (\T1/lmtt/m/n/12 SymmetricSparseMatrix\T1/lmr/m/n/12 , \T1/lmtt/m/n/12 Vector\T1/lmr/m/n/12 , \T1/lmtt/m/n/12 ConjugateGradientSolver\T1/lmr/m/n/12 ),
  []
 
-<uml.png, id=153, 1531.7225pt x 1105.12875pt>
+<uml.png, id=221, 1531.7225pt x 1105.12875pt>
 File: uml.png Graphic file (type png)
 <use uml.png>
-Package pdftex.def Info: uml.png  used on input line 54.
+Package pdftex.def Info: uml.png  used on input line 64.
 (pdftex.def)             Requested size: 452.9679pt x 326.80272pt.
 
-Overfull \hbox (78.8766pt too wide) in paragraph at lines 63--73
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (78.8766pt too wide) in paragraph at lines 73--83
 \T1/lmr/m/n/12 ery con-crete el-e-ment type must im-ple-ment: \T1/lmtt/m/n/12 local_stiffness() \T1/lmr/m/n/12 and \T1/lmtt/m/n/12 equivalent_nodal_load_local()\T1/lmr/m/n/12 .
  []
 
-[5
-
- <./uml.png (PNG copy)>]
-Overfull \hbox (62.24496pt too wide) in paragraph at lines 103--113
+[5{C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}]
+Overfull \hbox (62.24496pt too wide) in paragraph at lines 113--123
 []\T1/lmr/m/n/12 At the \T1/lmr/bx/n/12 el-e-ment level\T1/lmr/m/n/12 , the in-ter-nal con-den-sa-tion helpers of \T1/lmtt/m/n/12 FrameElement \T1/lmr/m/n/12 --- \T1/lmtt/m/n/12 _apply_releases()\T1/lmr/m/n/12 ,
  []
 
 
-Overfull \hbox (19.15518pt too wide) in paragraph at lines 103--113
+Overfull \hbox (19.15518pt too wide) in paragraph at lines 113--123
 \T1/lmtt/m/n/12 _submatrix()\T1/lmr/m/n/12 , \T1/lmtt/m/n/12 _inverse_small()\T1/lmr/m/n/12 , \T1/lmtt/m/n/12 _mat_mul()\T1/lmr/m/n/12 , \T1/lmtt/m/n/12 _mat_sub()\T1/lmr/m/n/12 , \T1/lmtt/m/n/12 _mat_vec()\T1/lmr/m/n/12 , and \T1/lmtt/m/n/12 _vec_sub()
  []
 
 
-Overfull \hbox (71.84352pt too wide) in paragraph at lines 114--122
+Overfull \hbox (71.84352pt too wide) in paragraph at lines 124--132
 \T1/lmr/m/n/12 (\T1/lmtt/m/n/12 assemble_global_stiffness()\T1/lmr/m/n/12 , \T1/lmtt/m/n/12 solve()\T1/lmr/m/n/12 , \T1/lmtt/m/n/12 compute_reactions()\T1/lmr/m/n/12 , \T1/lmtt/m/n/12 compute_member_end_forces()\T1/lmr/m/n/12 ).
  []
 
-
-Overfull \hbox (29.62729pt too wide) in paragraph at lines 130--134
+[6 <./uml.png (PNG copy)>]
+Overfull \hbox (29.62729pt too wide) in paragraph at lines 140--144
 []\T1/lmr/bx/n/12 matrixlib\T1/lmr/m/n/12 : pro-vides \T1/lmtt/m/n/12 SymmetricSparseMatrix\T1/lmr/m/n/12 , \T1/lmtt/m/n/12 Vector\T1/lmr/m/n/12 , and \T1/lmtt/m/n/12 ConjugateGradientSolver\T1/lmr/m/n/12 .
  []
 
-[6]
-Overfull \hbox (81.60524pt too wide) in paragraph at lines 226--233
+[7]
+Overfull \hbox (81.60524pt too wide) in paragraph at lines 236--243
 \T1/lmr/m/n/12 nonzero en-tries only at po-si-tions \T1/lmtt/m/n/12 (0,0)\T1/lmr/m/n/12 , \T1/lmtt/m/n/12 (0,3)\T1/lmr/m/n/12 , \T1/lmtt/m/n/12 (3,0)\T1/lmr/m/n/12 , and \T1/lmtt/m/n/12 (3,3)\T1/lmr/m/n/12 , and \T1/lmtt/m/n/12 equivalent_nodal_load_local()
  []
 
-[7]
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 284.
-
-Overfull \hbox (40.16695pt too wide) in paragraph at lines 317--319
-\T1/lmr/m/n/12 Two nam-ing in-con-sis-ten-cies ex-ist be-tween the module-level legacy func-tions in \T1/lmtt/m/n/12 frame_element.py
- []
-
 [8]
-Overfull \hbox (11.84334pt too wide) in paragraph at lines 321--333
-[]\T1/lmtt/m/n/12 compute_rotation_matrix()\T1/lmr/m/n/12 , \T1/lmtt/m/n/12 compute_global_stiffness()\T1/lmr/m/n/12 , \T1/lmtt/m/n/12 matrix_multiply()\T1/lmr/m/n/12 ,
- []
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 294.
 
-[9] [10
 
-]
-Overfull \hbox (78.08237pt too wide) in paragraph at lines 446--446
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[9]
+Overfull \hbox (78.08237pt too wide) in paragraph at lines 422--422
 []    \T1/lmtt/m/n/12 {"id": 0, "x": 0.0, "y": 0.0, "restraints": {"ux": true, "uy": true, "rz": true}},[] 
  []
 
-[11
-
-] [12] [13
-
-{C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}] [14
-
-]) (Chapter2_Testing_and_Verification.tex [15
+[10] [11] [12{C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}] [13]) (Chapter2_Testing_and_Verification.tex [14]
+Chapter 2.
+[15
 
 ] [16]
-Chapter 2.
-[17
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 92.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 92.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 92.
 
-] [18
 
-] [19
+LaTeX Warning: Command \textdegree invalid in math mode on input line 116.
 
-] [20
 
-] [21
+LaTeX Warning: Command \textdegree invalid in math mode on input line 116.
 
-]) (Chapter3_Warning_and_Error_Handling.tex [22
+[17]
+LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 158.
+ (C:\Users\Imran Shahriar\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmss.fd
+File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [18]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 205.
+<q2_frame_analysis/ftool/images/Frame_Regression.png, id=301, 91.09032pt x 104.64093pt>
+File: q2_frame_analysis/ftool/images/Frame_Regression.png Graphic file (type png)
+<use q2_frame_analysis/ftool/images/Frame_Regression.png>
+Package pdftex.def Info: q2_frame_analysis/ftool/images/Frame_Regression.png  used on input line 212.
+(pdftex.def)             Requested size: 181.18439pt x 208.16362pt.
+ [19
+
+ <./q2_frame_analysis/ftool/images/Frame_Regression.png>]
+<q2_frame_analysis/ftool/Truss_Regression.png, id=310, 465.23813pt x 291.33844pt>
+File: q2_frame_analysis/ftool/Truss_Regression.png Graphic file (type png)
+<use q2_frame_analysis/ftool/Truss_Regression.png>
+Package pdftex.def Info: q2_frame_analysis/ftool/Truss_Regression.png  used on input line 252.
+(pdftex.def)             Requested size: 271.7835pt x 170.19891pt.
+ [20
+
+ <./q2_frame_analysis/ftool/Truss_Regression.png>]
+<q2_frame_analysis/ftool/images/Mixed_Regression.png, id=316, 202.50656pt x 135.50626pt>
+File: q2_frame_analysis/ftool/images/Mixed_Regression.png Graphic file (type png)
+<use q2_frame_analysis/ftool/images/Mixed_Regression.png>
+Package pdftex.def Info: q2_frame_analysis/ftool/images/Mixed_Regression.png  used on input line 292.
+(pdftex.def)             Requested size: 181.18439pt x 121.24113pt.
+ [21
+
+ <./q2_frame_analysis/ftool/images/Mixed_Regression.png>] [22]
+Overfull \hbox (34.85735pt too wide) in paragraph at lines 360--360
+[]\T1/lmtt/m/n/12 ============================= test session starts =============================[] 
+ []
+
+
+Overfull \hbox (71.90736pt too wide) in paragraph at lines 360--360
+[]\T1/lmtt/m/n/12 q2_frame_analysis/tests/test_solver_suite.py::test_unit_frame_stiffness PASSED [ 12%][] 
+ []
+
+
+Overfull \hbox (102.78238pt too wide) in paragraph at lines 360--360
+[]\T1/lmtt/m/n/12 q2_frame_analysis/tests/test_solver_suite.py::test_unit_frame_transformation PASSED [ 25%][] 
+ []
+
+
+Overfull \hbox (84.25737pt too wide) in paragraph at lines 360--360
+[]\T1/lmtt/m/n/12 q2_frame_analysis/tests/test_solver_suite.py::test_unit_frame_equiv_loads PASSED [ 37%][] 
+ []
+
+
+Overfull \hbox (96.60738pt too wide) in paragraph at lines 360--360
+[]\T1/lmtt/m/n/12 q2_frame_analysis/tests/test_solver_suite.py::test_interface_frame_assembly PASSED [ 50%][] 
+ []
+
+
+Overfull \hbox (96.60037pt too wide) in paragraph at lines 360--360
+[]\T1/lmtt/m/n/12 q2_frame_analysis/tests/test_solver_suite.py::test_interface_mixed_assembly PASSED [ 62%][] 
+ []
+
+
+Overfull \hbox (47.20735pt too wide) in paragraph at lines 360--360
+[]\T1/lmtt/m/n/12 q2_frame_analysis/tests/test_solver_suite.py::test_regression_frame PASSED [ 75%][] 
+ []
+
+
+Overfull \hbox (47.20735pt too wide) in paragraph at lines 360--360
+[]\T1/lmtt/m/n/12 q2_frame_analysis/tests/test_solver_suite.py::test_regression_truss PASSED [ 87%][] 
+ []
+
+
+Overfull \hbox (47.20735pt too wide) in paragraph at lines 360--360
+[]\T1/lmtt/m/n/12 q2_frame_analysis/tests/test_solver_suite.py::test_regression_mixed PASSED [100%][] 
+ []
+
+
+Overfull \hbox (34.85735pt too wide) in paragraph at lines 360--360
+[]\T1/lmtt/m/n/12 ============================== 8 passed in 0.74s ==============================[] 
+ []
+
+) (Chapter3_Warning_and_Error_Handling.tex [23
 
 ]
 Chapter 3.
-[23
-
-] [24
+[24
 
 ]
-<q2_frame_analysis/images/ch3/sample_a.png, id=280, 1405.25pt x 501.875pt>
+<q2_frame_analysis/images/ch3/model_a.png, id=339, 197.98969pt x 161.10187pt>
+File: q2_frame_analysis/images/ch3/model_a.png Graphic file (type png)
+<use q2_frame_analysis/images/ch3/model_a.png>
+Package pdftex.def Info: q2_frame_analysis/images/ch3/model_a.png  used on input line 60.
+(pdftex.def)             Requested size: 226.48395pt x 184.2898pt.
+<q2_frame_analysis/images/ch3/sample_a.png, id=340, 1405.25pt x 501.875pt>
 File: q2_frame_analysis/images/ch3/sample_a.png Graphic file (type png)
 <use q2_frame_analysis/images/ch3/sample_a.png>
-Package pdftex.def Info: q2_frame_analysis/images/ch3/sample_a.png  used on input line 58.
-(pdftex.def)             Requested size: 430.31812pt x 153.68045pt.
- [25
+Package pdftex.def Info: q2_frame_analysis/images/ch3/sample_a.png  used on input line 71.
+(pdftex.def)             Requested size: 452.95796pt x 256.07767pt.
 
- <./q2_frame_analysis/images/ch3/sample_a.png (PNG copy)>]
-<q2_frame_analysis/images/ch3/sample_b.png, id=286, 1405.25pt x 501.875pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<q2_frame_analysis/ftool/images/3a_point.png, id=342, 356.0803pt x 366.61969pt>
+File: q2_frame_analysis/ftool/images/3a_point.png Graphic file (type png)
+<use q2_frame_analysis/ftool/images/3a_point.png>
+Package pdftex.def Info: q2_frame_analysis/ftool/images/3a_point.png  used on input line 77.
+(pdftex.def)             Requested size: 271.7835pt x 279.8366pt.
+<q2_frame_analysis/ftool/images/3a_UDL.png, id=343, 350.81062pt x 354.57469pt>
+File: q2_frame_analysis/ftool/images/3a_UDL.png Graphic file (type png)
+<use q2_frame_analysis/ftool/images/3a_UDL.png>
+Package pdftex.def Info: q2_frame_analysis/ftool/images/3a_UDL.png  used on input line 81.
+(pdftex.def)             Requested size: 271.7835pt x 274.7168pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[25 <./q2_frame_analysis/images/ch3/model_a.png>] [26 <./q2_frame_analysis/images/ch3/sample_a.png (PNG copy)>] [27 <./q2_frame_analysis/ftool/images/3a_point.png> <./q2_frame_analysis/ftool/images/3a_UDL.png>]
+<q2_frame_analysis/images/ch3/model_b.png, id=360, 149.05687pt x 167.87718pt>
+File: q2_frame_analysis/images/ch3/model_b.png Graphic file (type png)
+<use q2_frame_analysis/images/ch3/model_b.png>
+Package pdftex.def Info: q2_frame_analysis/images/ch3/model_b.png  used on input line 95.
+(pdftex.def)             Requested size: 181.18439pt x 204.07211pt.
+<q2_frame_analysis/images/ch3/sample_b.png, id=361, 1405.25pt x 501.875pt>
 File: q2_frame_analysis/images/ch3/sample_b.png Graphic file (type png)
 <use q2_frame_analysis/images/ch3/sample_b.png>
-Package pdftex.def Info: q2_frame_analysis/images/ch3/sample_b.png  used on input line 70.
-(pdftex.def)             Requested size: 430.31812pt x 153.68045pt.
- [26
+Package pdftex.def Info: q2_frame_analysis/images/ch3/sample_b.png  used on input line 105.
+(pdftex.def)             Requested size: 452.95796pt x 256.07767pt.
 
- <./q2_frame_analysis/images/ch3/sample_b.png (PNG copy)>]
-<q2_frame_analysis/images/ch3/sample_c.png, id=292, 1405.25pt x 843.15pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[28
+
+ <./q2_frame_analysis/images/ch3/model_b.png>] [29 <./q2_frame_analysis/images/ch3/sample_b.png (PNG copy)>]
+<q2_frame_analysis/ftool/images/3b_point.png, id=373, 357.58594pt x 340.27126pt>
+File: q2_frame_analysis/ftool/images/3b_point.png Graphic file (type png)
+<use q2_frame_analysis/ftool/images/3b_point.png>
+Package pdftex.def Info: q2_frame_analysis/ftool/images/3b_point.png  used on input line 113.
+(pdftex.def)             Requested size: 271.7835pt x 258.6348pt.
+<q2_frame_analysis/ftool/images/3b_UDL.png, id=374, 413.29407pt x 368.1253pt>
+File: q2_frame_analysis/ftool/images/3b_UDL.png Graphic file (type png)
+<use q2_frame_analysis/ftool/images/3b_UDL.png>
+Package pdftex.def Info: q2_frame_analysis/ftool/images/3b_UDL.png  used on input line 117.
+(pdftex.def)             Requested size: 271.7835pt x 242.08717pt.
+ [30
+
+ <./q2_frame_analysis/ftool/images/3b_point.png> <./q2_frame_analysis/ftool/images/3b_UDL.png>]
+<q2_frame_analysis/images/ch3/model_c.png, id=382, 163.3603pt x 152.06813pt>
+File: q2_frame_analysis/images/ch3/model_c.png Graphic file (type png)
+<use q2_frame_analysis/images/ch3/model_c.png>
+Package pdftex.def Info: q2_frame_analysis/images/ch3/model_c.png  used on input line 131.
+(pdftex.def)             Requested size: 226.48395pt x 210.82878pt.
+<q2_frame_analysis/images/ch3/sample_c.png, id=383, 1405.25pt x 843.15pt>
 File: q2_frame_analysis/images/ch3/sample_c.png Graphic file (type png)
 <use q2_frame_analysis/images/ch3/sample_c.png>
-Package pdftex.def Info: q2_frame_analysis/images/ch3/sample_c.png  used on input line 82.
-(pdftex.def)             Requested size: 430.31812pt x 258.18317pt.
- [27
+Package pdftex.def Info: q2_frame_analysis/images/ch3/sample_c.png  used on input line 146.
+(pdftex.def)             Requested size: 452.95796pt x 312.98192pt.
 
- <./q2_frame_analysis/images/ch3/sample_c.png (PNG copy)>]
-<q2_frame_analysis/images/ch3/sample_d.png, id=298, 1405.25pt x 576.1525pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 1881) in paragraph at lines 177--177
+[]|\T1/lmr/m/n/10.95 Consistency check: logic
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[31
+
+{C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc} <./q2_frame_analysis/images/ch3/model_c.png>] [32 <./q2_frame_analysis/images/ch3/sample_c.png (PNG copy)>]
+<q2_frame_analysis/images/ch3/model_d (1).png, id=396, 179.16937pt x 158.09062pt>
+File: q2_frame_analysis/images/ch3/model_d (1).png Graphic file (type png)
+<use q2_frame_analysis/images/ch3/model_d (1).png>
+Package pdftex.def Info: q2_frame_analysis/images/ch3/model_d (1).png  used on input line 189.
+(pdftex.def)             Requested size: 226.48395pt x 199.85135pt.
+<q2_frame_analysis/images/ch3/sample_d.png, id=397, 1405.25pt x 576.1525pt>
 File: q2_frame_analysis/images/ch3/sample_d.png Graphic file (type png)
 <use q2_frame_analysis/images/ch3/sample_d.png>
-Package pdftex.def Info: q2_frame_analysis/images/ch3/sample_d.png  used on input line 94.
-(pdftex.def)             Requested size: 430.31812pt x 176.42516pt.
- [28
+Package pdftex.def Info: q2_frame_analysis/images/ch3/sample_d.png  used on input line 206.
+(pdftex.def)             Requested size: 452.95796pt x 312.98605pt.
 
- <./q2_frame_analysis/images/ch3/sample_d.png (PNG copy)>]
-<q2_frame_analysis/images/ch3/sample_e.png, id=304, 1405.25pt x 652.4375pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 5622) in paragraph at lines 233--233
+[]|\T1/lmr/m/n/10.95 Verified (Cor-rect mag-ni-
+ []
+
+
+Underfull \hbox (badness 2951) in paragraph at lines 233--233
+[]|\T1/lmr/m/n/10.95 Verified (Sym-met-ric load
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[33
+
+ <./q2_frame_analysis/images/ch3/model_d (1).png>] [34 <./q2_frame_analysis/images/ch3/sample_d.png (PNG copy)>]
+<q2_frame_analysis/images/ch3/model_e.png, id=409, 288.3272pt x 91.09032pt>
+File: q2_frame_analysis/images/ch3/model_e.png Graphic file (type png)
+<use q2_frame_analysis/images/ch3/model_e.png>
+Package pdftex.def Info: q2_frame_analysis/images/ch3/model_e.png  used on input line 246.
+(pdftex.def)             Requested size: 385.02547pt x 121.64478pt.
+<q2_frame_analysis/images/ch3/sample_e.png, id=410, 1405.25pt x 652.4375pt>
 File: q2_frame_analysis/images/ch3/sample_e.png Graphic file (type png)
 <use q2_frame_analysis/images/ch3/sample_e.png>
-Package pdftex.def Info: q2_frame_analysis/images/ch3/sample_e.png  used on input line 106.
-(pdftex.def)             Requested size: 430.31812pt x 199.78459pt.
- [29
+Package pdftex.def Info: q2_frame_analysis/images/ch3/sample_e.png  used on input line 257.
+(pdftex.def)             Requested size: 452.95796pt x 312.98183pt.
 
- <./q2_frame_analysis/images/ch3/sample_e.png (PNG copy)>]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 118.
 
-Underfull \hbox (badness 1354) in paragraph at lines 124--124
-[]\T1/lmr/m/n/10.95 Insufficient re-straints
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 3503) in paragraph at lines 284--284
+[]|\T1/lmr/m/n/10.95 Perfect Match (Nu-mer-i-cal
  []
 
 
-Underfull \hbox (badness 2197) in paragraph at lines 124--125
-[]\T1/lmr/m/n/10.95 Singular-stiffness mech-a-nism
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
+[]|\T1/lmr/m/n/10.95 Verified (Cor-rect or-
+ []
+
+[35
+
+ <./q2_frame_analysis/images/ch3/model_e.png>] [36 <./q2_frame_analysis/images/ch3/sample_e.png (PNG copy)>]
+Underfull \hbox (badness 8170) in paragraph at lines 320--320
+[]|\T1/lmr/m/n/10.95 Warnings for dis-con-nected
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--128
-[]\T1/lmr/m/n/10.95 Non-physical ma-te-
+Underfull \hbox (badness 1418) in paragraph at lines 320--320
+\T1/lmr/m/n/10.95 nec-tion; anal-y-sis com-pleted
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--129
-[]\T1/lmr/m/n/10.95 Property val-i-da-tion er-ror;
+Underfull \hbox (badness 1365) in paragraph at lines 320--320
+[]|\T1/lmr/m/n/10.95 Analysis com-pleted suc-cess-
  []
 
 
-Underfull \hbox (badness 2213) in paragraph at lines 130--130
-[]\T1/lmr/m/n/10.95 Yes (with cau-
+Underfull \hbox (badness 5622) in paragraph at lines 320--320
+[]|\T1/lmr/m/n/10.95 Statically in-de-ter-mi-
  []
 
-) [30
+
+Underfull \hbox (badness 1365) in paragraph at lines 320--320
+[]|\T1/lmr/m/n/10.95 Analysis com-pleted suc-cess-
+ []
+
+) (Chapter4_Conclusion.tex [37
+
+]
+Chapter 4.
+) (Chapter5_References.tex [38
+
+]
+Chapter 5.
+)
+Overfull \hbox (9.80905pt too wide) in paragraph at lines 9--91
+[]\T1/lmr/m/n/12 OpenAI. (2026). \T1/lmr/m/it/12 Chat-GPT Plus \T1/lmr/m/n/12 (GPT-5.4) [Large lan-guage model]. []$\T1/lmtt/m/n/12 https : / / chatgpt .
+ []
+
+[39
 
 ] (main.aux)
  ***********
@@ -591,20 +831,20 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8DE7132F22E7B14A7608D91EAC878F69;3710.
+(rerunfilecheck)             Checksum: 8431877E79CA829E6A662BF880D97A79;4207.
  ) 
 Here is how much of TeX's memory you used:
- 10824 strings out of 467867
- 168619 string characters out of 5413942
- 575558 words of memory out of 5000000
- 39433 multiletter control sequences out of 15000+600000
- 708890 words of font info for 98 fonts, out of 8000000 for 9000
+ 11831 strings out of 467867
+ 188578 string characters out of 5413942
+ 600806 words of memory out of 5000000
+ 40393 multiletter control sequences out of 15000+600000
+ 753692 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,10n,79p,471b,637s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (31 pages, 962611 bytes).
+ 75i,14n,79p,887b,647s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss8.pfb><C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/Users/Imran Shahriar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
+Output written on main.pdf (40 pages, 1195391 bytes).
 PDF statistics:
- 403 PDF objects out of 1000 (max. 8388607)
- 102 named destinations out of 1000 (max. 500000)
- 215 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 563 PDF objects out of 1000 (max. 8388607)
+ 104 named destinations out of 1000 (max. 500000)
+ 342 words of extra memory for PDF output out of 10000 (max. 10000000)
 

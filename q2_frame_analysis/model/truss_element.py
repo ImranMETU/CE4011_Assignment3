@@ -100,6 +100,13 @@ class TrussElement(Element):
         return k
 
     def equivalent_nodal_load_local(self):
+        """
+        Compute equivalent nodal loads for a truss element.
+        
+        Truss elements carry axial force only. Transverse loads (local_y direction)
+        are physically meaningless for a pin-jointed truss and are ignored.
+        Only loads in the local_x (axial) direction contribute to the equivalent vector.
+        """
         L = self.length()
         f_local = [0.0 for _ in range(6)]
 
@@ -113,8 +120,8 @@ class TrussElement(Element):
                     f_local[0] += 0.5 * w * L
                     f_local[3] += 0.5 * w * L
                 elif direction == "local_y":
-                    f_local[1] += 0.5 * w * L
-                    f_local[4] += 0.5 * w * L
+                    # Transverse loads are ignored for truss elements (no lateral stiffness)
+                    pass
                 else:
                     raise ValueError(f"Unknown UDL direction: {direction}")
             elif load_type == "point":
@@ -127,8 +134,8 @@ class TrussElement(Element):
                     f_local[0] += P * b / L
                     f_local[3] += P * a / L
                 elif direction == "local_y":
-                    f_local[1] += P * b / L
-                    f_local[4] += P * a / L
+                    # Transverse loads are ignored for truss elements (no lateral stiffness)
+                    pass
                 else:
                     raise ValueError(f"Unknown point-load direction: {direction}")
             else:

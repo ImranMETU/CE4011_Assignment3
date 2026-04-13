@@ -1,0 +1,25 @@
+========================================================================
+RESULTS FOR: q2_frame_regression_test_results
+========================================================================
+Nodes: 3
+Elements: 2
+Active DOFs: 6
+||F|| = 5.000000e+00
+||D|| = 4.170293e-06
+
+Nodal Displacements (active equations):
+  Eq   1:  1.185185185e-06
+  Eq   2: -4.444444444e-09
+  Eq   3: -1.185185185e-06
+  Eq   4:  1.185185185e-06
+  Eq   5: -3.164938272e-06
+  Eq   6: -1.777777778e-06
+
+Support Reactions (all nodes, global directions):
+  Node  0: Rx=-1.847411e-13, Ry= 5.000000e+00, Mz= 1.000000e+01
+  Node  1: Rx=-2.091838e-11, Ry= 5.595098e-10, Mz= 1.316636e-11
+  Node  2: Rx= 2.091838e-11, Ry=-1.310241e-11, Mz= 1.318767e-11
+
+Member-End Forces (local coordinates):
+  Element  1 | i-end: Nx= 5.000000e+00, Vy= 1.847411e-13, Mz= 1.000000e+01 | j-end: Nx=-5.000000e+00, Vy=-1.847411e-13, Mz=-1.000000e+01
+  Element  2 | i-end: Nx=-2.091838e-11, Vy= 5.000000e+00, Mz= 1.000000e+01 | j-end: Nx= 2.091838e-11, Vy=-5.000000e+00, Mz= 1.318767e-11

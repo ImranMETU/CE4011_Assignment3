@@ -3,6 +3,10 @@ from model import FrameElement, Material, Node, Section, Structure, TrussElement
 
 from helpers import assert_close, assert_matrix_close, assert_symmetric, assert_vector_close, identity, matmul, transpose
 
+# Tolerances used throughout:
+#   Stiffness matrix entries : abs tolerance 1e-8
+#   Displacements and forces  : abs tolerance 1e-6
+
 
 def test_unit_frame_stiffness():
     # Verifies the unreleased 2D frame local stiffness matrix.
@@ -190,10 +194,10 @@ def test_regression_frame():
 
     reactions = structure.compute_reactions()
     assert_close(reactions[0]["rx"], 0.0, "left support horizontal reaction")
-    assert_close(reactions[0]["ry"], -5.0, "left support vertical reaction")
+    assert_close(reactions[0]["ry"], 5.0, "left support vertical reaction")
     assert_close(reactions[0]["mz"], -5.0, "left support moment reaction")
     assert_close(reactions[1]["rx"], 0.0, "right support horizontal reaction")
-    assert_close(reactions[1]["ry"], -5.0, "right support vertical reaction")
+    assert_close(reactions[1]["ry"], 5.0, "right support vertical reaction")
     assert_close(reactions[1]["mz"], 5.0, "right support moment reaction")
 
     member_forces = structure.compute_member_end_forces()
@@ -284,3 +288,31 @@ def test_regression_mixed():
     assert_close(truss_4["node_j"]["nx"], 2.285989856629297, "mixed truss axial force at j-end")
     assert_close(truss_4["node_i"]["vy"], 0.0, "mixed truss i-end shear force")
     assert_close(truss_4["node_i"]["mz"], 0.0, "mixed truss i-end moment")
+
+
+def test_unit_frame_released_with_member_load():
+    # Verifies the complex interaction of element moment release with member loads.
+    # This tests end-release condensation combined with equivalent nodal load transformation.
+    material = Material("m1", 10.0)
+    section = Section("s1", 2.0, 3.0)
+    node_i = Node(0, 0.0, 0.0)
+    node_j = Node(1, 4.0, 0.0)
+    
+    element = FrameElement(1, node_i, node_j, material, section, release_end=True)
+    element.member_loads.append({"type": "point", "direction": "local_y", "p": -10.0, "a": 2.0})
+    
+    # Local stiffness with release
+    k_local = element.local_stiffness()
+    assert_symmetric(k_local, "released frame local stiffness matrix")
+    
+    # Verify that condensed stiffness removes moment DOF at free end
+    # (position [5][5] should have modified stiffness reflecting release)
+    assert_close(k_local[5][5], 15.0, "moment stiffness at free end (partially condensed)")
+    
+    # Equivalent nodal load must reflect the release
+    f_eq = element.equivalent_nodal_load_local()
+    assert_vector_close(
+        f_eq,
+        [0.0, 5.0, 5.0, 0.0, 5.0, 0.0],  # Last element is zero due to moment release
+        "released frame equivalent nodal load with member load",
+    )

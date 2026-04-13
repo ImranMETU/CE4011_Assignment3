@@ -1,0 +1,14 @@
+{
+  "nodes": [
+    {"id": 0, "x": 0.0, "y": 0.0, "restraints": {"ux": true, "uy": true, "rz": true}},
+    {"id": 1, "x": 2.0, "y": 0.0, "restraints": {"ux": true, "uy": true, "rz": true}},
+    {"id": 2, "x": 1.0, "y": 1.0}
+  ],
+  "materials": [{"id": "m1", "E": 2.1e8}],
+  "sections": [{"id": "s1", "A": 0.01, "I": 0.0}],
+  "elements": [
+    {"id": 1, "type": "truss", "node_i": 0, "node_j": 2, "material": "m1", "section": "s1"},
+    {"id": 2, "type": "truss", "node_i": 1, "node_j": 2, "material": "m1", "section": "s1"}
+  ],
+  "nodal_loads": [{"node": 2, "fx": 0.0, "fy": -10.0, "mz": 0.0}]
+}
